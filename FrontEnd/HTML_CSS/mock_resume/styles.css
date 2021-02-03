@@ -1,16 +1,82 @@
+:root {
+  --darkest: #141414;
+  --darker: #282828;
+  --dark: #373737;
+  --blue: #44a5d2;
+  --green: #69a333;
+  --yellow: #fdbe27;
+  --red: #ed3d02;
+  --white: #ffffff;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+body {
+  background-color: var(--darkest);
+}
+
+.wrapper {
+  width: 900px;
+  margin: auto;
+  background-color: var(--darker);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.basic_info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.hero {
+  display: flex;
+}
+
+.hero-copy {
+  margin-left: 15px;
+}
+
+.hero-copy h1 {
+  color: var(--white);
+}
+
+.hero-copy h3 {
+  color: var(--blue);
+}
+
 .prof_pic {
   width: 140px;
   height: 140px;
-  background: url("https://yifytorrent.unblockit.ltd/yt/20170308/50937/screenshot3.png");
-  float: left;
+  background: url("https://yifytorrent.unblockit.ltd/yt/20170308/50937/screenshot3.png")
+    center center no-repeat;
+  background-size: cover;
+  border: 1px solid black;
 }
 
-img {
-  object-fit: cover;
+td {
+  padding-bottom: 3px;
+}
+
+.info tbody tr td:first-child {
+  text-align: right;
+}
+
+.info tbody tr td:last-child {
+  padding-left: 6px;
+}
+
+.copy {
+}
+
+.main {
+  padding: 15px;
 }
