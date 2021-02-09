@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printing Shapes</title>
+</head>
+<body>
+
+
+    
+<script>
+
+
+    // //   Shape 1 
+    // const w = prompt('Here we will define the dimensions of a shape.  What is the width of the shape?')
+    // const col = prompt('What is the height of the shape?')
+
+    // let row = '';
+    // var shape = ''
+
+    // for(let i = 0; i < w; i++) {
+    //     row +='*'
+    // }
+
+    // for(let i = 0; i < col; i++) {
+    //     shape = shape + row + '\n'
+    // }
+
+    // console.log('Shape:')
+    // console.log('--------')
+    // console.log(shape)
+
+
+
+
+
+
+
+
+
+
+
+    // //  -------------------------------
+    // //   Shape 2
+    // const w = prompt('Here we will define the dimensions of a shape.  What is the width of the shape?')
+    // const col = prompt('What is the height of the shape?')
+
+    // let shape = '';
+
+    // for(let k = 0; k < col; k++) {
+
+    //     if(k%2== 0){ 
+
+    //         for(let i = 0; i < w; i++) {
+    //             if(i%2 == 0) {
+    //                 shape += '*'
+    //             } else {
+    //                 shape += ' '
+    //             }
+    //         }
+    //         shape += '\n'
+
+    //     } else {
+
+    //         for(let i = 0; i < w; i++) {
+    //             if(i%2 == 0) {
+    //                 shape += ' '
+    //             } else {
+    //                 shape += '*'
+    //             }
+    //         }
+    //         shape += '\n'
+
+    //     }
+    // }
+
+    // console.log('Shape:')
+    // console.log('--------')
+    // console.log(shape)
+
+
+
+
+
+
+
+    
+    // // //  -------------------------------
+    // // //   Shape 3
+    // const dimension = prompt('Here we will define the dimensions of a cross.  What is the height of the cross?')
+
+    // let shape = ''
+
+    // for(let r = 1; r <= dimension; r++) {
+
+
+    //     for(let i = 0; i < dimension; i++) {
+
+    //         if(i%dimension === r-1 || i === dimension-r) {
+    //             shape += '*'
+    //         } else {
+    //             shape += ' '
+    //         }
+
+    //     }
+
+    //     shape += '\n'
+
+    // }
+
+    // console.log(shape)
+    
+
+
+
+
+
+
+
+    
+    // //  -------------------------------
+    // //   Shape 4
+
+    // const dimension = prompt('Here we will define the dimensions of a cross.  What is the height of the cross?')
+
+    // let shape = ''
+
+    // for(let r = 1; r <= dimension; r++) {
+
+
+    //     for(let i = 1; i <= r; i++) {
+    //         shape += '*'
+    //     }
+
+    //     shape += '\n'
+
+    // }
+
+    // console.log(shape)
+
+
+
+
+
+
+
+
+
+
+    // //  -------------------------------
+    // //   Shape 5
+
+    // const dimension = prompt('Here we will define the dimensions of a triangle.  What is the height of the trianle?')
+
+    // let shape = ''
+
+    // for(let r = 0; r < dimension; r++) {
+
+    //     for(let i = 0; i < r; i++) {
+    //         shape += ' '
+    //     }
+
+    //     for(let i = dimension; i > r; i--) {
+    //         shape += '*'
+    //     }
+
+    //     shape += '\n'
+
+    // }
+
+    // console.log(shape)
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //  -------------------------------
+    //   Shape 6
+
+    const cols = prompt('Input width: ')
+		const rows = prompt('Input height: ')
+		
+		
+		let shape = '';
+		let stars = cols;
+		let spaces = 0;
+		
+		for (r = 1; r <= rows; r++){
+			for (sL = 1; sL <= spaces; sL++){
+				shape+=' '
+			}
+			for (st=1; st<=stars; st++){
+				shape+='*'
+			}
+			for (sR = 1; sR <= spaces; sR++){
+				shape+=' '
+			}
+		shape+='\n';
+		stars-=2;
+		spaces+=1;
+		}
+		
+		console.log(shape)
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
