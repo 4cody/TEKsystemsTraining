@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+</head>
+<body>
+
+    <script>
+
+
+        // let seq = prompt('Give me a list of numbers')
+        // seq = seq.split(' ')
+        // let sum = 0
+        // for(el of seq) {
+        //     sum += +el
+        // }
+        // console.log(sum)
+
+
+
+
+
+
+
+        let seq = prompt('Give me an equation')
+
+        let splits = seq.split('+')
+
+        for(let k = 0; k < splits.length; k++) {
+            let b = splits[k].split('-')
+            let t = 0;
+            for(let i = 0; i < b.length; i++){
+                if(i == 0) {
+                    t = b[i]
+                }  else {
+                    t -= b[i]
+                }
+            }
+
+            splits[k] = t
+        }
+
+        let t = 0
+        for(let i = 0; i < splits.length; i++) {
+            t += +splits[i]
+        }
+
+        console.log(t)
+
+
+
+
+
+
+        // let b = [10, 3, 0]
+
+        // let t = 0;
+
+        // for(let i = 0; i < b.length; i++){
+        //     if(i == 0) {
+        //         t = b[i]
+        //     }  else {
+        //         t -= b[i]
+        //     }
+        // }
+
+        // console.log(t)
+
+
+
+
+    </script>
+    
+</body>
+</html>
