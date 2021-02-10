@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UseFull Functions</title>
+</head>
+<body>
+    <script>
+
+        function isNumber(a) {
+            console.log(isNaN(a))
+        }
+
+        function convertToNumber(a) {
+            console.log(+a)
+        }
+
+        function smaller(x,y) {
+            if(isNaN(x) || isNaN(y)) {
+                console.log("NOPE")
+                return;
+            }
+            
+            if( x < y ) {
+                console.log(x)
+            } else {
+                console.log(y)
+            }
+        }
+
+        function smaller3(x,y,z) {
+            if(isNaN(x) || isNaN(y) || isNaN(z)) {
+                console.log("NOPE")
+                return;
+            }
+
+            let t;
+            if( x < y ) {
+                t = x
+            } else {
+                t = y
+            }
+
+            if (t < z) {
+                console.log(t)
+            } else {
+                console.log(z)
+            }
+            
+        }
+
+        function isLeep(y) {
+            if (y % 4 != 0) {
+                console.log('normal')
+            } else if (y % 100 != 0) {
+                console.log('leep')
+            } else if ( y %400 != 0) {
+                console.log('normal')
+            } else {
+                console.log('leep')
+            }
+        }
+
+        smaller3('2', 4, 8)
+        smaller3('a34', 5, )
+        smaller3(4, 1)
+
+    </script>
+</body>
+</html>
