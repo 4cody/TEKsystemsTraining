@@ -38,18 +38,243 @@
 
 
         
-        var scope = 'global'
-        function checkscope() {
-            var scope = 'local'
-            function nested() {
-                // var scope = 'nested'
-                return scope
-            }
-            return nested;
-        }
+        // var scope = 'global'
+        // function checkscope() {
+        //     var scope = 'local'
+        //     function nested() {
+        //         // var scope = 'nested'
+        //         return scope
+        //     }
+        //     return nested;
+        // }
 
-        var result = checkscope()
-        console.log(result())
+        // var result = checkscope()
+        // console.log(result())
+
+
+
+
+
+
+        // var Dream = function (day, mood) {
+        // this.day = day;
+        // this.mood = mood;
+        // };
+
+        // var DreamFactory = {
+        // dreams: [],
+
+        // createDream: function (day, mood) {
+        //     return new Dream(day, mood);
+        // },
+
+        // addDream: function (dream) {
+        //     this.dreams.push(dream);
+        // },
+
+        // listDreams () {
+        //     this.dreams.forEach (function (dream) {
+        //     console.log('You dreamed a ' + dream.mood + ' dream on ' + dream.day);
+        //     });
+        // }
+        // };
+
+        // DreamFactory.addDream(DreamFactory.createDream('Sunday', 'dark'));
+        // DreamFactory.addDream(DreamFactory.createDream('Monday', 'funny'));
+
+        // DreamFactory.listDreams();
+
+
+
+
+
+        // function Hero(name) {
+        //     this.name = name;
+        // }
+
+        // var myHero = new Hero('Link')
+        // console.log(myHero)
+
+
+
+
+
+
+        // function person(first, last, age, eye) {
+        //     this.firstName = first;
+        //     this.lastName = last;
+        //     this.age = age;
+        //     this.eyeColor = eye;
+        // }
+
+        // var myFather = new person("John", "Doe", 50, "blue");
+        // var myMother = new person("Sally", "Rally", 48, "green");
+        // var me = new person("Cody", "Shan", 33, "blue");
+
+        // console.log(me)
+        
+
+
+        
+        // function Song(t, a) {
+        //     this.title = t
+        //     this.artists = a
+        // }
+
+        // Song.prototype.play = function() {
+        //     console.log('Playing ' + this.title)
+        // }        
+
+        // var song1 = new Song('Time', 'Pink Floyd');
+        // var song2 = new Song('Sweet Life', 'Frank Ocean');
+        // var song3 = new Song('Intro', 'M83');
+        // var song4 = new Song('Bloom', 'ODESZA');
+        // var song5 = new Song('The Less I Know The Better', 'Tame Impala');
+
+        // song4.play(); //logs 'Bloom'
+        // song2.play(); //logs 'Playing: Sweet Life'
+        // song3.play(); //logs 'Playing: Intro'
+
+
+
+
+
+
+        // function cars(b, n, y, p) {
+        //     this.brand = b
+        //     this.name = n
+        //     this.year = y
+        //     this.price = p
+        // }
+
+        // var c1 = new cars('vw', 'bug', '1959', '100')
+        // var c2 = new cars('gm', 'sierra', '2020', '33,000')
+        // var c3 = new cars('ford', 'pinto', '1980', '340')
+
+        // console.log(c1)
+        // console.log(c2)
+        // console.log(c3)
+
+
+
+
+
+
+
+
+
+
+        // function Hero(name, occupation) {
+        //     this.name = name;
+        //     this.occupation = occupation
+        // }
+
+        // Hero.prototype.whoAreYou = function() {
+        //     return 'My name is ' + this.name + ' and I\'m a ' + this.occupation
+        // }
+
+        // var myHero = new Hero('Link', 'warrior')
+        // console.log(myHero.whoAreYou())
+
+
+
+
+
+
+
+
+        // function arrayString(arr) {
+        //     this.str = arr.join('')
+        // }
+
+        // var animal = new arrayString(['d', 'o', 'g'])
+        // var car = new arrayString(['f', 'o', 'r', 'd'])
+
+        // console.log(animal.str)
+        // console.log(car.str)
+
+
+
+
+
+
+
+        // function House(symbol) {
+        //     this.symbol = symbol;
+        //     this.lord = undefined;
+        // }
+        // function Person(name) {
+        //     this.name = name;
+        //     this.children = null;
+        //     this.parent = null;
+        // }
+
+        // Lannister = new House('lion');
+
+        // Tywin = new Person('Tywin');
+        // Tyrion = new Person('Tyrion');
+        // Cersi = new Person('Cersi');
+        // Jamie = new Person('Jamie');
+        // Joffrey = new Person('Joffrey')
+        // Myrcella = new Person('Myrcella')
+        // Tomme = new Person('Tomme')
+
+        // Lannister.lord = Tywin;
+        // Tywin.children = [Jamie, Cersi, Tyrion];
+        // Jamie.parent = Tywin;
+        // Cersi.parent = Tywin;
+        // Tyrion.parent = Tywin;
+
+        // Joffrey.house = Lannister
+        // Myrcella.house = Lannister
+        // Tomme.house = Lannister
+
+        // // console.log(Lannister);
+        // // console.log(Tywin);
+        // // console.log(Cersi);
+
+        // console.log(Joffrey)
+        // console.log(Myrcella)
+        // console.log(Tomme)
+
+
+
+
+
+
+
+
+        // function Day(y,m,d) {
+        //     this.year = y
+        //     this.month = m
+        //     this.day = d
+        // }
+
+
+        // function getDaysinMonth(y, m) {
+       
+
+
+        // }
+        
+        // var a = new Date
+
+        // console.log(a.__proto__)
+        // console.log(a.Date())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     </script>
